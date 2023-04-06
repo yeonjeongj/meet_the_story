@@ -1,0 +1,28 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  @include flex-center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.main_text {
+  font-size: 60px;
+  line-height: 1;
+  text-align: center;
+}
+
+.input_wrap {
+  @include flex-center;
+  width: 100%;
+}
+
+.search_input {
+  height: 30px;
+  width: 40%;
+  border-radius: 20px;
+}

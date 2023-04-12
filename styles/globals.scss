@@ -1,3 +1,5 @@
+@import "colors", "size";
+
 :root {
 }
 
@@ -5,6 +7,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  color: $light;
 }
 
 html,
@@ -12,9 +15,24 @@ body {
   max-width: 100vw;
   height: 100vh;
   overflow-x: hidden;
+  background-color: $dark;
+}
+
+body {
+  padding: 40px;
+
+  @media (max-width: $tablet) {
+    padding: 25px;
+  }
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+input {
+  &:focus {
+    outline: none;
+  }
 }
